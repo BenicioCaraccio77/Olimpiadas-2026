@@ -1,0 +1,143 @@
+body {
+    background-image: url("/home/estudiante/Descargas/mejores-aerolineas-de-mexico-p.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.TITULOPRINCIPAL{
+    font-family: "Edu QLD Hand", cursive ;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.TITULOPAQUETE{
+    color:rgb(197, 197, 197);
+    position: absolute;
+}
+
+.PAQUETE1{
+    position: relative;
+    background-image: url("https://elviajerofeliz.com/wp-content/uploads/2019/07/canda.jpg");
+    background-size: cover ;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    width: 250px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.PAQUETE1::before{
+    content:"";
+    position: absolute;
+    inset:0;
+    background-color: rgb(0, 0, 0, 0.45);
+}
+.PAQUETE1:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.PAQUETE2{
+    position: relative;
+    background-image: url("https://blogimages.musement.com/2019/06/15-Grecia_Fotolia_218021187_Subscription_XL.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(134, 73, 73);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    width: 250px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.PAQUETE2::before{
+    content:"";
+    position: absolute;
+    inset:0;
+    background-color: rgb(0, 0, 0, 0.45);
+}
+.PAQUETE2:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+
+.PAQUETE3{
+    position: relative;
+    background-image: url("https://mipasaporteviajero.com/wp-content/uploads/2022/09/nueva-york-estados-unidos.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(134, 73, 73);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    width: 250px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.PAQUETE3::before{
+    content:"";
+    position: absolute;
+    inset:0;
+    background-color: rgb(0, 0, 0, 0.45);
+}
+.PAQUETE3:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+.PAQUETE4{
+    position: relative;
+    background-image: url("https://viajes.nationalgeographic.com.es/medio/2021/06/18/sudafrica_95c7b016_800x800.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: rgb(134, 73, 73);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    width: 250px;
+    height: 50px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.PAQUETE4::before{
+    content:"";
+    position: absolute;
+    inset:0;
+    background-color: rgb(0, 0, 0, 0.45);
+}
+
+.PAQUETE4:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+
