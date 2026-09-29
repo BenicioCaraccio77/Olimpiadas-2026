@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(163, 81, 51);
+    /* background-image: url("https://images.unsplash.com/photo-1542296332-2e4473faf563?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWVyb3B1ZXJ0b3xlbnwwfHwwfHx8MA%3D%3D"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.TITULO{
+    font-family: "Edu QLD Hand", cursive ;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 90px;
+    margin-bottom: 10px;
+    color: white;
+}
+.TITULO::before{
+    content:"";
+    position: absolute;
+    inset:0;
+    background-color: rgb(0, 0, 0, 0.20);
+}
+
+
+.AYUDA{
+    text-align: center;
+    font-family: "Edu QLD Hand", cursive ;
+    font-optical-sizing: auto;
+    color: white;
+
+}
+
+
+.REDIRECCION {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CAJA-AEROPUERTO {
+    display: flex;
+    flex-direction: column 3 row 1; 
+    background-image: url("https://wallpaperaccess.com/full/1307259.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 250px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    align-items: center;
+    justify-content:center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+
+.CAJA-AEROPUERTO:hover{
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+
+.VER-PAQUETE {
+    position: relative;
+    z-index: 1;
+    margin: 20px 0 0 0;
+}
+
+.REDIRECCION {
+    display: flex;
+    flex-direction: column 3 row 1;
+    align-items: center;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
