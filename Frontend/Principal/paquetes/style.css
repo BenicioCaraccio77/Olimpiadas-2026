@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    padding: 40px;
+    background-image:
+        linear-gradient(rgba(70, 25, 10, 0.45), rgba(70, 25, 10, 0.55)),
+        url("../../img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.TITULOPRINCIPAL {
+    text-align: center;
+    color: #fff8f0;
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.PAQUETES {
+    width: 900px;
+    max-width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.PAQUETE1,
+.PAQUETE2,
+.PAQUETE3,
+.PAQUETE4,
+.PAQUETE5,
+.PAQUETE6 {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.PAQUETE1 {
+    background-image: url("../../img/canada.jpg");
+}
+
+.PAQUETE2 {
+    background-image: url("../../img/Grecia.jpg");
+}
+
+.PAQUETE3 {
+    background-image: url("../../img/Eeuu.jpg");
+}
+
+.PAQUETE4 {
+    background-image: url("../../img/Sudafrica.jpg");
+}
+
+.PAQUETE5 {
+    background-image: url("../../img/Bariloche.png");
+}
+
+.PAQUETE6 {
+    background-image: url("../../img/Cataratas.jpg");
+}
+
+.PAQUETE1::before,
+.PAQUETE2::before,
+.PAQUETE3::before,
+.PAQUETE4::before,
+.PAQUETE5::before,
+.PAQUETE6::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(70, 25, 10, 0.35);
+}
+
+.TITULOPAQUETE {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.PAQUETE1:hover,
+.PAQUETE2:hover,
+.PAQUETE3:hover,
+.PAQUETE4:hover,
+.PAQUETE5:hover,
+.PAQUETE6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 25px;
+    }
+
+    .TITULOPRINCIPAL {
+        font-size: 34px;
+    }
+
+    .PAQUETES {
+        grid-template-columns: 1fr;
+    }
+}
