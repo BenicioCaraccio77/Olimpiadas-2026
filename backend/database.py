@@ -1,18 +1,10 @@
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker, declarative_base
+import os
+from dotenv import load_dotenv
+from supabase import create_client
 
-# Archivo donde se va a guardar la base de datos
-DATABASE_URL = "sqlite:///./agencia.db"
+load_dotenv()
 
-engine = create_engine(
-    DATABASE_URL,
-    connect_args={"check_same_thread": False}
-)
+url = os.getenv("SUPABASE_URL")
+clave = os.getenv("SUPABASE_KEY")
 
-SessionLocal = sessionmaker(
-    autocommit=False,
-    autoflush=False,
-    bind=engine
-)
-
-Base = declarative_base()
+supabase = create_client(url, clave)
