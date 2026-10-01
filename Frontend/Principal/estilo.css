@@ -1,90 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: rgb(163, 81, 51);
-   
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(90, 45, 30, 0.6), rgba(163, 81, 51, 0.7)),
+        url("../img/fondoPrincipal.jpg");
+
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.TITULO{
-    font-family: "Edu QLD Hand", cursive ;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+.CONTENIDO {
+    min-height: 100vh;
+    padding: 50px 30px;
+}
+
+.ENCABEZADO {
     text-align: center;
-    font-size: 90px;
-    margin-bottom: 10px;
     color: white;
-}
-.TITULO::before{
-    content:"";
-    position: absolute;
-    inset:0;
-    background-color: rgb(0, 0, 0, 0.20);
+    margin-bottom: 45px;
 }
 
-
-.AYUDA{
-    text-align: center;
-    font-family: "Edu QLD Hand", cursive ;
-    font-optical-sizing: auto;
-    color: white;
-
+.MARCA {
+    margin: 0 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #f4d5c1;
 }
 
+.ENCABEZADO h1 {
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.SUBTITULO {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff1e8;
+}
 
 .REDIRECCION {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1050px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .CAJA-AEROPUERTO {
+    min-height: 140px;
+    padding: 25px;
     display: flex;
-    flex-direction: column 3 row 1; 
-    background-image: url("https://wallpaperaccess.com/full/1307259.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 250px;
-    height: 250px;
+    align-items: center;
+    justify-content: space-between;
     color: white;
     text-decoration: none;
-    font-family: Arial, sans-serif;
-    border-radius: 5px;
-    align-items: center;
-    justify-content:center;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
+    background-color: rgba(70, 35, 23, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 18px;
+    transition: 0.3s;
 }
 
-
-.CAJA-AEROPUERTO:hover{
-    transform: scale(1.08);
-    cursor: pointer;
+.CAJA-AEROPUERTO:hover {
+    transform: translateY(-5px);
+    background-color: rgba(100, 45, 28, 0.8);
 }
 
-
-.VER-PAQUETE {
-    position: relative;
-    z-index: 1;
-    margin: 20px 0 0 0;
+.CAJA-AEROPUERTO h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
 }
 
-.REDIRECCION {
-    display: flex;
-    flex-direction: column 3 row 1;
-    align-items: center;
-    gap: 30px;
+.CAJA-AEROPUERTO p {
+    margin: 0;
+    color: #f1dcd0;
+    font-size: 15px;
 }
 
+.FLECHA {
+    font-size: 28px;
+    color: #f3c7af;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 700px) {
+    .REDIRECCION {
+        grid-template-columns: 1fr;
+    }
+    .ENCABEZADO h1 {
+        font-size: 45px;
+    }
+}
