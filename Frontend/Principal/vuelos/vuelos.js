@@ -15,8 +15,8 @@ async function cargarVuelos() {
                     </div>
 
                     <div class="DATOS">
-                        <span>✈️ Vuelo CATB</span>
-                        <span>✈️ Directo</span>
+                        <span>Vuelo CATB</span>
+                        <span>Directo</span>
                     </div>
 
                     <div class="PRECIO">
