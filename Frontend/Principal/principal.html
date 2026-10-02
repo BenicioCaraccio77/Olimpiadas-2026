@@ -17,6 +17,17 @@
             <h1>Tu próxima historia<br>comienza acá</h1>
             <p class="SUBTITULO">Elegí cómo querés viajar y empezá a descubrir el mundo.</p>
         </div>
+        <div class="BOTONES">
+
+            <a href="carrito/carrito.html" class="BOTON-CARRITO">
+                🛒 Carrito
+            </a>
+
+            <button id="cerrar-sesion" class="BOTON-CERRAR">
+                Cerrar sesión
+            </button>
+
+        </div>
 
         <div class="REDIRECCION">
             <a href="paquetes/index.html" class="CAJA-AEROPUERTO">
@@ -26,21 +37,21 @@
                 </div>
                 <span class="FLECHA">→</span>
             </a>
-            <a href="index.html" class="CAJA-AEROPUERTO">
+            <a href="alojamientos/alojamientos.html" class="CAJA-AEROPUERTO">
                 <div>
                     <h2>Alojamiento</h2>
                     <p>Encontrá dónde quedarte</p>
                 </div>
                 <span class="FLECHA">→</span>
             </a>
-            <a href="index.html" class="CAJA-AEROPUERTO">
+            <a href="vuelos/vuelos.html" class="CAJA-AEROPUERTO">
                 <div>
                     <h2>Vuelos</h2>
                     <p>Elegí tu próximo destino</p>
                 </div>
                 <span class="FLECHA">→</span>
             </a>
-            <a href="index.html" class="CAJA-AEROPUERTO">
+            <a href="alquiler-autos/alquiler.html" class="CAJA-AEROPUERTO">
                 <div>
                     <h2>Alquiler de autos</h2>
                     <p>Movete con libertad</p>
@@ -50,5 +61,24 @@
         </div>
     </div>
 
+    <script>
+
+    document.getElementById("cerrar-sesion").addEventListener("click", () => {
+
+        const confirmar = confirm(
+            "¿Querés cerrar sesión?"
+        )
+
+        if (!confirmar) {
+            return
+        }
+
+        localStorage.removeItem("access_token")
+
+        window.location.href = "../login/login.html"
+
+    })
+
+</script>
 </body>
 </html>

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(90, 45, 30, 0.6),
+            rgba(163, 81, 51, 0.7)
+        ),
+        url("../../img/fondoPrincipal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 30px 0;
+}
+
+.CONTENIDO {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.VOLVER {
+    display: inline-block;
+    margin-bottom: 25px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.VOLVER:hover {
+    text-decoration: underline;
+}
+
+.ENCABEZADO {
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.MARCA {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ENCABEZADO h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.SUBTITULO {
+    font-size: 17px;
+}
+
+.PAGO {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 25px;
+}
+
+.TARJETA,
+.RESUMEN {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.TARJETA h2,
+.RESUMEN h2 {
+    color: #3b2a20;
+    margin-bottom: 20px;
+}
+
+.TARJETA label {
+    display: block;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    color: #3b2a20;
+}
+
+.TARJETA label:hover {
+    background: #f5eee8;
+}
+
+.TARJETA input {
+    margin-right: 10px;
+}
+
+#confirmar {
+    width: 100%;
+
+    padding: 13px;
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #8b4f35;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#confirmar:hover {
+    background: #6f3d29;
+}
+
+.RESUMEN p {
+    color: #555;
+    font-size: 18px;
+}
+
+#total {
+    color: #8b4f35;
+    font-size: 24px;
+}
+
+@media (max-width: 700px) {
+
+    .PAGO {
+        grid-template-columns: 1fr;
+    }
+
+    .ENCABEZADO h1 {
+        font-size: 34px;
+    }
+}

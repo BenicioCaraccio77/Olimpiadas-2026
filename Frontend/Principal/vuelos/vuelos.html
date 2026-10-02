@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="vuelos.css">
+
+    <title>Vuelos - Aerolíneas CATB</title>
+</head>
+
+<body>
+
+    <div class="CONTENIDO">
+
+        <a href="../principal.html" class="VOLVER">← Volver</a>
+
+        <header class="ENCABEZADO">
+            <p class="MARCA">AEROLÍNEAS CATB</p>
+            <h1>Encontrá tu próximo vuelo</h1>
+            <p class="SUBTITULO">
+                Elegí tu destino y comenzá tu próximo viaje.
+            </p>
+        </header>
+
+        <main>
+
+            <section class="BUSCADOR">
+
+                <div class="CAMPO">
+                    <label for="origen">Origen</label>
+                    <input type="text" id="origen" placeholder="¿Desde dónde?">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" placeholder="¿A dónde?">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="pasajeros">Pasajeros</label>
+                    <input type="number" id="pasajeros" min="1" value="1">
+                </div>
+
+                <button>Buscar vuelos</button>
+
+            </section>
+
+            <section class="VUELOS">
+
+                <h2>Vuelos disponibles</h2>
+
+                <div class="TARJETAS"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="vuelos.js"></script>
+
+</body>
+</html>

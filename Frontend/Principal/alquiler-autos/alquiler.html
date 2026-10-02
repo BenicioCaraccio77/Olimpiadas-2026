@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="alquiler.css">
+
+    <title>Alquiler de autos - Aerolíneas CATB</title>
+</head>
+
+<body>
+
+    <div class="CONTENIDO">
+
+        <a href="../principal.html" class="VOLVER">← Volver</a>
+
+        <header class="ENCABEZADO">
+            <p class="MARCA">AEROLÍNEAS CATB</p>
+
+            <h1>Alquilá tu próximo auto</h1>
+
+            <p class="SUBTITULO">
+                Elegí un auto y movete con libertad durante tu viaje.
+            </p>
+        </header>
+
+        <main>
+
+            <section class="BUSCADOR">
+
+                <div class="CAMPO">
+                    <label for="ubicacion">Lugar de retiro</label>
+                    <input type="text" id="ubicacion" placeholder="¿Dónde retirás el auto?">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="retiro">Fecha de retiro</label>
+                    <input type="date" id="retiro">
+                </div>
+
+                <div class="CAMPO">
+                    <label for="devolucion">Fecha de devolución</label>
+                    <input type="date" id="devolucion">
+                </div>
+
+                <button>Buscar autos</button>
+
+            </section>
+
+            <section class="AUTOS">
+
+                <h2>Autos disponibles</h2>
+
+                <div class="TARJETAS"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="alquiler.js"></script>
+
+</body>
+</html>

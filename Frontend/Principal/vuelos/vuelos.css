@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(90, 45, 30, 0.65), rgba(163, 81, 51, 0.75)),
+        url("../../img/fondoPrincipal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.CONTENIDO {
+    min-height: 100vh;
+    padding: 35px 30px 50px;
+}
+
+.VOLVER {
+    color: #fff1e8;
+    text-decoration: none;
+}
+
+.VOLVER:hover {
+    color: #f3c7af;
+}
+
+.ENCABEZADO {
+    text-align: center;
+    color: white;
+    margin: 25px 0 35px;
+}
+
+.MARCA {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #f4d5c1;
+}
+
+.ENCABEZADO h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.SUBTITULO {
+    margin-top: 15px;
+    color: #fff1e8;
+}
+
+.BUSCADOR {
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 15px;
+    align-items: end;
+    background-color: rgba(70, 35, 23, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+}
+
+.CAMPO {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.CAMPO label {
+    color: #f4d5c1;
+    font-size: 14px;
+}
+
+.CAMPO input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+}
+
+.BUSCADOR button,
+.TARJETA button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 9px;
+    background-color: #f3c7af;
+    color: #5a2d1e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.BUSCADOR button:hover,
+.TARJETA button:hover {
+    background-color: #fff1e8;
+}
+
+.VUELOS {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    color: white;
+}
+
+.VUELOS h2 {
+    margin-bottom: 20px;
+}
+
+.TARJETAS {
+    display: grid;
+    gap: 18px;
+}
+
+.TARJETA {
+    padding: 22px;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr auto;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(70, 35, 23, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+}
+
+.TARJETA:hover {
+    background-color: rgba(100, 45, 28, 0.9);
+}
+
+.TARJETA h3 {
+    margin: 0 0 7px;
+}
+
+.TARJETA p {
+    margin: 0;
+    color: #f1dcd0;
+    font-size: 14px;
+}
+
+.DATOS {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #f4d5c1;
+    font-size: 14px;
+}
+
+.PRECIO {
+    display: flex;
+    flex-direction: column;
+}
+
+.PRECIO strong {
+    font-size: 25px;
+}
+
+.PRECIO span {
+    color: #f1dcd0;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .BUSCADOR {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .TARJETA {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .CONTENIDO {
+        padding: 25px 18px;
+    }
+
+    .ENCABEZADO h1 {
+        font-size: 36px;
+    }
+
+    .BUSCADOR {
+        grid-template-columns: 1fr;
+    }
+
+    .TARJETA {
+        grid-template-columns: 1fr;
+    }
+}

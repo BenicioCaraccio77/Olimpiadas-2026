@@ -21,10 +21,40 @@ formulario.addEventListener("submit", async (e) => {
         const datos = await respuesta.json()
 
         if (respuesta.ok) {
-            localStorage.setItem("access_token", datos.access_token)
-            window.location.href = "../Principal/principal.html"
+
+            localStorage.setItem(
+                "access_token",
+                datos.access_token
+            )
+
+            const respuestaAdmin = await fetch(
+                "http://127.0.0.1:8000/admin/verificar",
+                {
+                    headers: {
+                        "Authorization": `Bearer ${datos.access_token}`
+                    }
+                }
+            )
+
+            const datosAdmin =
+                await respuestaAdmin.json()
+
+            if (datosAdmin.admin) {
+
+                window.location.href =
+                    "../Principal/admin/admin.html"
+
+            } else {
+
+                window.location.href =
+                    "../Principal/principal.html"
+
+            }
+
         } else {
+
             alert("Error al iniciar sesión")
+
         }
 
     } catch (error) {

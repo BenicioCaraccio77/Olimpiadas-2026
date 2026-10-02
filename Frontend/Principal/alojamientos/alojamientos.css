@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(90, 45, 30, 0.65), rgba(163, 81, 51, 0.75)),
+        url("../../img/fondoPrincipal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.CONTENIDO {
+    min-height: 100vh;
+    padding: 45px 30px;
+}
+
+.ENCABEZADO {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.MARCA {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #f4d5c1;
+}
+
+.ENCABEZADO h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.SUBTITULO {
+    margin-top: 15px;
+    font-size: 17px;
+    color: #fff1e8;
+}
+
+.ALOJAMIENTOS {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.TARJETA {
+    overflow: hidden;
+    background-color: rgba(70, 35, 23, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 18px;
+    color: white;
+    transition: 0.3s;
+}
+
+.TARJETA:hover {
+    transform: translateY(-6px);
+    background-color: rgba(100, 45, 28, 0.9);
+}
+
+.IMAGEN {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.IMAGEN img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.INFO {
+    padding: 20px;
+}
+
+.INFO h2 {
+    margin: 0 0 8px;
+    font-size: 23px;
+}
+
+.UBICACION {
+    color: #f3c7af;
+    font-size: 14px;
+}
+
+.INFO > p:not(.UBICACION) {
+    color: #f1dcd0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.DETALLES {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin: 18px 0;
+    color: #f4d5c1;
+    font-size: 14px;
+}
+
+.PRECIO {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    margin-bottom: 15px;
+}
+
+.PRECIO strong {
+    font-size: 24px;
+}
+
+.PRECIO span {
+    color: #f1dcd0;
+    font-size: 13px;
+}
+
+.INFO button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f3c7af;
+    color: #5a2d1e;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.INFO button:hover {
+    background-color: #fff1e8;
+}
+
+.VOLVER {
+    display: block;
+    width: fit-content;
+    margin-bottom: 25px;
+    color: #fff1e8;
+    text-decoration: none;
+}
+
+.VOLVER:hover {
+    color: #f3c7af;
+}
+.BOTON {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #f3c7af;
+    color: #5a2d1e;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.BOTON:hover {
+    background-color: #fff1e8;
+}
+
+@media (max-width: 900px) {
+    .ALOJAMIENTOS {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .CONTENIDO {
+        padding: 35px 20px;
+    }
+
+    .ENCABEZADO h1 {
+        font-size: 38px;
+    }
+
+    .ALOJAMIENTOS {
+        grid-template-columns: 1fr;
+    }
+}
