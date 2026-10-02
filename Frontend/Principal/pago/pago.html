@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="pago.css">
+
+    <title>Pago - Aerolíneas CATB</title>
+</head>
+
+<body>
+
+    <div class="CONTENIDO">
+
+        <a href="../carrito/carrito.html" class="VOLVER">
+            ← Volver al carrito
+        </a>
+
+        <header class="ENCABEZADO">
+
+            <p class="MARCA">
+                AEROLÍNEAS CATB
+            </p>
+
+            <h1>
+                Confirmar pago
+            </h1>
+
+            <p class="SUBTITULO">
+                Elegí un método de pago para completar tu compra.
+            </p>
+
+        </header>
+
+
+        <main class="PAGO">
+
+            <section class="TARJETA">
+
+                <h2>
+                    Método de pago
+                </h2>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="metodo"
+                        value="Tarjeta"
+                    >
+
+                    Tarjeta
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="metodo"
+                        value="Transferencia"
+                    >
+
+                    Transferencia
+                </label>
+
+
+                <label>
+                    <input
+                        type="radio"
+                        name="metodo"
+                        value="Efectivo"
+                    >
+
+                    Efectivo
+                </label>
+
+
+                <button id="confirmar">
+                    Confirmar pago
+                </button>
+
+            </section>
+
+
+            <section class="RESUMEN">
+
+                <h2>
+                    Resumen
+                </h2>
+
+                <p>
+                    Total:
+                    <strong id="total">
+                        $0
+                    </strong>
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+    <script src="pago.js"></script>
+
+</body>
+</html>

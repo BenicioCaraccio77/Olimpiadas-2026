@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(90, 45, 30, 0.65), rgba(163, 81, 51, 0.75)),
+        url("../img/fondoPrincipal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.CONTENIDO {
+    min-height: 100vh;
+    padding: 40px 30px;
+}
+
+.VOLVER {
+    display: block;
+    width: fit-content;
+    margin-bottom: 25px;
+    color: #fff1e8;
+    text-decoration: none;
+}
+
+.VOLVER:hover {
+    color: #f3c7af;
+}
+
+.DETALLE {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    background-color: rgba(70, 35, 23, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    color: white;
+}
+
+.IMAGEN {
+    min-height: 550px;
+}
+
+.IMAGEN img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.INFO {
+    padding: 45px;
+}
+
+.MARCA {
+    margin: 0 0 15px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #f4d5c1;
+}
+
+.INFO h1 {
+    margin: 0;
+    font-size: 45px;
+}
+
+.UBICACION {
+    color: #f3c7af;
+    margin: 12px 0;
+}
+
+.CALIFICACION {
+    display: inline-block;
+    padding: 7px 12px;
+    margin: 10px 0 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.DESCRIPCION {
+    color: #f1dcd0;
+    line-height: 1.6;
+}
+
+.INFO h2 {
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+.SERVICIOS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    color: #f4d5c1;
+    font-size: 14px;
+}
+
+.PRECIO {
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+    margin: 30px 0 18px;
+}
+
+.PRECIO strong {
+    font-size: 30px;
+}
+
+.PRECIO span {
+    color: #f1dcd0;
+}
+
+.INFO button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f3c7af;
+    color: #5a2d1e;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.INFO button:hover {
+    background-color: #fff1e8;
+}
+
+@media (max-width: 750px) {
+    .DETALLE {
+        grid-template-columns: 1fr;
+    }
+
+    .IMAGEN {
+        min-height: 300px;
+    }
+
+    .INFO {
+        padding: 30px;
+    }
+
+    .INFO h1 {
+        font-size: 36px;
+    }
+}
