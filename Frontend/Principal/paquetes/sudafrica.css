@@ -1,0 +1,84 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+h1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1600&q=80");
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Subtítulo */
+h3 {
+    text-align: center;
+    margin: 30px auto 20px;
+    color: #16697a;
+    font-size: 25px;
+}
+
+/* Párrafos */
+p {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 25px 30px;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    font-size: 17px;
+}
+
+/* Separación entre las actividades */
+p br {
+    line-height: 2;
+}
+
+/* Segundo bloque de información */
+h3 + p {
+    border-left: 5px solid #16697a;
+}
+
+/* media query para celulares */
+@media (max-width: 600px) {
+
+    h1 {
+        min-height: 250px;
+        font-size: 32px;
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 21px;
+        padding: 0 15px;
+    }
+
+    p {
+        margin: 0 15px 25px;
+        padding: 20px;
+        font-size: 15px;
+    }
+}

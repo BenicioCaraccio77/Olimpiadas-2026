@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f8fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Título principal */
+h1 {
+    min-height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 80, 130, 0.45),
+            rgba(0, 80, 130, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-align: center;
+
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+/* Subtítulo */
+h3 {
+    text-align: center;
+
+    color: #006994;
+
+    font-size: 27px;
+
+    margin: 35px auto 20px;
+}
+
+/* Tarjetas de información */
+p {
+    max-width: 850px;
+
+    margin: 0 auto 30px;
+
+    padding: 25px 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+
+    font-size: 17px;
+}
+
+/* Línea azul en el itinerario */
+h3 + p {
+    border-left: 5px solid #006994;
+}
+
+/* Espaciado entre las actividades */
+p br {
+    line-height: 2;
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+
+    h1 {
+        min-height: 250px;
+
+        padding: 20px;
+
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 21px;
+
+        padding: 0 15px;
+    }
+
+    p {
+        margin: 0 15px 25px;
+
+        padding: 20px;
+
+        font-size: 15px;
+    }
+}

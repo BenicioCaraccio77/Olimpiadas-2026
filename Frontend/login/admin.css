@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+        background-image: linear-gradient(rgba(70, 25, 10, 0.45), rgba(70, 25, 10, 0.55)), url("../img/fondo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+}
+
+
+
+
+.encabezado {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.encabezado h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    letter-spacing: 3px;
+}
+
+.encabezado p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+.panel {
+    width: 80%;
+    max-width: 1000px;
+
+    margin: 20px auto;
+
+    text-align: center;
+}
+
+.panel h2 {
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+
+    margin-bottom: 30px;
+}
+
+
+
+
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+.opcion {
+    text-decoration: none;
+
+    color: white;
+
+    background-color: rgba(116, 116, 116, 0.85);
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    min-height: 150px;
+
+    transition: 0.3s;
+}
+
+
+.opcion:hover {
+    transform: scale(1.03);
+
+    background-color: rgba(70, 70, 70, 0.95);
+}
+
+
+.opcion h3 {
+    font-family: "Bebas Neue", sans-serif;
+
+    font-size: 30px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+.opcion p {
+    font-size: 16px;
+}
+
+
+
+
+footer {
+    text-align: center;
+
+    margin-top: 40px;
+
+    padding-bottom: 30px;
+}
+
+
+.volver {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: white;
+
+    background-color: rgb(134, 73, 73);
+
+    padding: 12px 25px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+
+.volver:hover {
+    background-color: rgb(170, 90, 90);
+
+    transform: scale(1.05);
+}
