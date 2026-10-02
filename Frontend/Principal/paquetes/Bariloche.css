@@ -1,23 +1,22 @@
+/* FONDO DE BARILOCHE */
 
-
-.PORTADA_EEUU {
-    background-image: url("https://images.unsplash.com/photo-1485871981521-5b1fd3805eee");
+.PORTADA_BARILOCHE {
+    background-image: url("https://c0.wallpaperflare.com/preview/881/303/659/argentina-san-carlos-de-bariloche-lake-mountain.jpg");
     background-size: cover;
     background-position: center;
-
+    background-attachment: fixed;
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
-    padding: 40px;
 }
 
 
+/* CAJA DE INFORMACIÓN */
 
-.INFO_EEUU {
-    background-color: rgba(255, 255, 255, 0.95);
+.INFO_BARILOCHE {
+    background-color: rgba(226, 226, 226, 0.94);
 
     width: 80%;
     max-width: 900px;
@@ -26,19 +25,20 @@
 
     border-radius: 15px;
 
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 
     text-align: left;
 }
 
 
+/* TÍTULO BARILOCHE */
 
-.INFO_EEUU h1 {
+.INFO_BARILOCHE h1 {
     text-align: center;
 
     font-size: 50px;
 
-    color: #1d3557;
+    color: #2e7d32;
 
     margin-bottom: 25px;
 
@@ -46,32 +46,39 @@
 }
 
 
+/* SUBTÍTULO */
 
-.INFO_EEUU h2 {
+.INFO_BARILOCHE h2 {
     text-align: center;
 
     font-size: 35px;
 
-    color: #b22234;
+    color: #1565c0;
 
     margin-bottom: 25px;
 
     font-family: "Bebas Neue", sans-serif;
 }
 
-.INFO_EEUU h3 {
-    color: #1d3557;
+
+/* TÍTULOS DE CADA SECCIÓN */
+
+.INFO_BARILOCHE h3 {
+    color: #1565c0;
 
     font-size: 23px;
 
     margin-top: 30px;
 
-    border-bottom: 2px solid #b22234;
+    border-bottom: 2px solid #2e7d32;
 
     padding-bottom: 8px;
 }
 
-.INFO_EEUU p {
+
+/* TEXTO */
+
+.INFO_BARILOCHE p {
     font-family: Arial, sans-serif;
 
     font-size: 17px;
@@ -82,8 +89,10 @@
 }
 
 
-.INFO_EEUU .VOLVER {
-    color: #1d3557;
+/* BOTÓN VOLVER */
+
+.INFO_BARILOCHE .VOLVER {
+    color: #1565c0;
 
     text-decoration: none;
 
@@ -92,10 +101,7 @@
     font-weight: bold;
 }
 
-.INFO_EEUU .VOLVER:hover {
-    text-decoration: underline;
-}
 
-.p{
-    text-align: center;
+.INFO_BARILOCHE .VOLVER:hover {
+    text-decoration: underline;
 }
