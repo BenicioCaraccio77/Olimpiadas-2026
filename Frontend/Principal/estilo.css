@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
     min-height: 100vh;
@@ -9,22 +8,18 @@ body {
     background:
         linear-gradient(rgba(90, 45, 30, 0.6), rgba(163, 81, 51, 0.7)),
         url("../img/fondoPrincipal.jpg");
-
     background-size: cover;
     background-position: center;
 }
-
 .CONTENIDO {
     min-height: 100vh;
     padding: 50px 30px;
 }
-
 .ENCABEZADO {
     text-align: center;
     color: white;
     margin-bottom: 45px;
 }
-
 .MARCA {
     margin: 0 0 15px;
     font-size: 14px;
@@ -32,28 +27,23 @@ body {
     letter-spacing: 3px;
     color: #f4d5c1;
 }
-
 .ENCABEZADO h1 {
     margin: 0;
     font-size: 60px;
     line-height: 1.1;
 }
-
 .SUBTITULO {
     margin-top: 20px;
     font-size: 18px;
     color: #fff1e8;
 }
-
 .REDIRECCION {
     max-width: 1050px;
     margin: auto;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-
 .CAJA-AEROPUERTO {
     min-height: 140px;
     padding: 25px;
@@ -67,23 +57,19 @@ body {
     border-radius: 18px;
     transition: 0.3s;
 }
-
 .CAJA-AEROPUERTO:hover {
     transform: translateY(-5px);
     background-color: rgba(100, 45, 28, 0.8);
 }
-
 .CAJA-AEROPUERTO h2 {
     margin: 0 0 8px;
     font-size: 24px;
 }
-
 .CAJA-AEROPUERTO p {
     margin: 0;
     color: #f1dcd0;
     font-size: 15px;
 }
-
 .FLECHA {
     font-size: 28px;
     color: #f3c7af;
@@ -96,4 +82,42 @@ body {
     .ENCABEZADO h1 {
         font-size: 45px;
     }
+}
+.BOTON-CARRITO {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    padding: 10px 18px;
+    background: #8b4f35;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.BOTON-CARRITO:hover {
+    background: #6f3d29;
+}
+.BOTON-CERRAR {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #8b4f35;
+    color: white;
+
+    font-weight: bold;
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.BOTON-CERRAR:hover {
+    background: #6f3d29;
 }

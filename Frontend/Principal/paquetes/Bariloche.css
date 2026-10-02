@@ -1,0 +1,107 @@
+/* FONDO DE BARILOCHE */
+
+.PORTADA_BARILOCHE {
+    background-image: url("https://c0.wallpaperflare.com/preview/881/303/659/argentina-san-carlos-de-bariloche-lake-mountain.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* CAJA DE INFORMACIÓN */
+
+.INFO_BARILOCHE {
+    background-color: rgba(226, 226, 226, 0.94);
+
+    width: 80%;
+    max-width: 900px;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+    text-align: left;
+}
+
+
+/* TÍTULO BARILOCHE */
+
+.INFO_BARILOCHE h1 {
+    text-align: center;
+
+    font-size: 50px;
+
+    color: #2e7d32;
+
+    margin-bottom: 25px;
+
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+/* SUBTÍTULO */
+
+.INFO_BARILOCHE h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #1565c0;
+
+    margin-bottom: 25px;
+
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+/* TÍTULOS DE CADA SECCIÓN */
+
+.INFO_BARILOCHE h3 {
+    color: #1565c0;
+
+    font-size: 23px;
+
+    margin-top: 30px;
+
+    border-bottom: 2px solid #2e7d32;
+
+    padding-bottom: 8px;
+}
+
+
+/* TEXTO */
+
+.INFO_BARILOCHE p {
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #333;
+}
+
+
+/* BOTÓN VOLVER */
+
+.INFO_BARILOCHE .VOLVER {
+    color: #1565c0;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.INFO_BARILOCHE .VOLVER:hover {
+    text-decoration: underline;
+}

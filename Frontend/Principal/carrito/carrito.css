@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background:
+        linear-gradient(
+            rgba(90, 45, 30, 0.6),
+            rgba(163, 81, 51, 0.7)
+        ),
+        url("../../img/fondoPrincipal.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    padding: 30px 0;
+}
+
+.CONTENIDO {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.VOLVER {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.VOLVER:hover {
+    text-decoration: underline;
+}
+
+.ENCABEZADO {
+    text-align: center;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.MARCA {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.ENCABEZADO h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.SUBTITULO {
+    font-size: 17px;
+}
+
+.CARRITO {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 25px;
+    align-items: start;
+}
+
+#productos-carrito {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.PRODUCTO-CARRITO {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.PRODUCTO-CARRITO h3 {
+    color: #3b2a20;
+    margin-bottom: 8px;
+}
+
+.PRODUCTO-CARRITO p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.PRODUCTO-CARRITO strong {
+    color: #8b4f35;
+    font-size: 20px;
+}
+
+.CANTIDAD {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.CANTIDAD button {
+    width: 32px;
+    height: 32px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #8b4f35;
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.CANTIDAD button:hover {
+    background: #6f3d29;
+}
+
+.CANTIDAD span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+.PRODUCTO-CARRITO button {
+    border: none;
+    border-radius: 7px;
+    padding: 8px 12px;
+
+    background: #e7ddd2;
+    color: #3b2a20;
+
+    cursor: pointer;
+}
+
+.PRODUCTO-CARRITO button:hover {
+    background: #d8c9ba;
+}
+
+.RESUMEN {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    position: sticky;
+    top: 20px;
+}
+
+.RESUMEN h2 {
+    color: #3b2a20;
+    margin-bottom: 20px;
+}
+
+.RESUMEN p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#total {
+    color: #8b4f35;
+    font-size: 24px;
+}
+
+#comprar {
+    width: 100%;
+    padding: 13px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #8b4f35;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#comprar:hover {
+    background: #6f3d29;
+}
+
+@media (max-width: 800px) {
+
+    .CARRITO {
+        grid-template-columns: 1fr;
+    }
+
+    .RESUMEN {
+        position: static;
+    }
+
+    .PRODUCTO-CARRITO {
+        grid-template-columns: 1fr;
+    }
+}
