@@ -1,0 +1,161 @@
+
+.CANADA {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+
+.CABECERA {
+    background-color: #d62828;
+    padding: 20px;
+    text-align: center;
+}
+
+.CABECERA h1 {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 45px;
+    margin: 10px;
+}
+
+.VOLVER {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+.VOLVER:hover {
+    text-decoration: underline;
+}
+
+
+.PORTADA_CANADA {
+    min-height: 450px;
+
+    background-image: url("https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+}
+
+
+.INFO_CANADA {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+
+    max-width: 600px;
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.INFO_CANADA h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 60px;
+    margin: 0 0 15px;
+}
+
+.INFO_CANADA p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.BOTON {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 12px 25px;
+
+    background-color: #d62828;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.BOTON:hover {
+    background-color: #a51d1d;
+}
+
+
+.PAQUETE_INFO {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.PAQUETE_INFO h2,
+.DESTINOS h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+}
+
+
+.TARJETAS {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.TARJETA {
+    background-color: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.TARJETA h3 {
+    color: #d62828;
+}
+
+
+.DESTINOS {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.LUGARES {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.LUGAR {
+    width: 250px;
+    padding: 25px;
+
+    border: 2px solid #d62828;
+    border-radius: 12px;
+}
+
+.LUGAR h3 {
+    color: #d62828;
+}
+
+
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

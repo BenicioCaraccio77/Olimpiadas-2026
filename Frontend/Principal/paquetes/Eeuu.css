@@ -1,0 +1,101 @@
+
+
+.PORTADA_EEUU {
+    background-image: url("https://images.unsplash.com/photo-1485871981521-5b1fd3805eee");
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+
+
+.INFO_EEUU {
+    background-color: rgba(255, 255, 255, 0.95);
+
+    width: 80%;
+    max-width: 900px;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+
+    text-align: left;
+}
+
+
+
+.INFO_EEUU h1 {
+    text-align: center;
+
+    font-size: 50px;
+
+    color: #1d3557;
+
+    margin-bottom: 25px;
+
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+.INFO_EEUU h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #b22234;
+
+    margin-bottom: 25px;
+
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.INFO_EEUU h3 {
+    color: #1d3557;
+
+    font-size: 23px;
+
+    margin-top: 30px;
+
+    border-bottom: 2px solid #b22234;
+
+    padding-bottom: 8px;
+}
+
+.INFO_EEUU p {
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    color: #333;
+}
+
+
+.INFO_EEUU .VOLVER {
+    color: #1d3557;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.INFO_EEUU .VOLVER:hover {
+    text-decoration: underline;
+}
+
+.p{
+    text-align: center;
+}

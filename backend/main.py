@@ -2,11 +2,9 @@ from fastapi import FastAPI, Header
 from pydantic import BaseModel
 from database import supabase
 from fastapi.middleware.cors import CORSMiddleware
+from database import supabase, supabase_admin
 
 app = FastAPI()
-
-print("URL:", supabase.supabase_url)
-print("KEY cargada:", bool(supabase.supabase_key))
 
 app.add_middleware(
     CORSMiddleware,
@@ -32,14 +30,43 @@ def inicio():
 
 @app.post("/registro")
 def registro(usuario: Usuario):
-    respuesta = supabase.auth.sign_up({
-        "email": usuario.email,
-        "password": usuario.password
-    })
 
-    return {
-        "mensaje": "Usuario registrado correctamente"
-    }
+    try:
+
+        respuesta = supabase.auth.sign_up({
+            "email": usuario.email,
+            "password": usuario.password
+        })
+
+        print("USUARIO AUTH:", respuesta.user)
+
+        if not respuesta.user:
+            return {
+                "error": "No se pudo registrar el usuario"
+            }
+
+        usuario_id = respuesta.user.id
+
+        resultado = supabase_admin.table("clientes").insert({
+            "usuario_id": usuario_id,
+            "mail": usuario.email
+        }).execute()
+
+        print("CLIENTE CREADO:", resultado.data)
+
+        return {
+            "mensaje": "Usuario registrado correctamente",
+            "usuario_id": usuario_id
+        }
+
+    except Exception as error:
+
+        print("ERROR EN REGISTRO:", error)
+
+        return {
+            "error": str(error)
+        }
+
 
 @app.post("/login")
 def login(usuario: Usuario):
@@ -69,14 +96,13 @@ def verificar_admin(authorization: str = Header(None)):
     respuesta = supabase.table("perfiles") \
         .select("rol") \
         .eq("id", usuario.user.id) \
-        .single() \
         .execute()
 
     if not respuesta.data:
         return {"admin": False}
 
     return {
-        "admin": respuesta.data["rol"] == "admin"
+        "admin": respuesta.data[0]["rol"] == "admin"
     }
 
 @app.get("/admin/compras")

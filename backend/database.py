@@ -8,3 +8,5 @@ url = os.getenv("SUPABASE_URL")
 clave = os.getenv("SUPABASE_KEY")
 
 supabase = create_client(url, clave)
+
+supabase_admin = create_client(url, clave)
