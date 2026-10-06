@@ -7,7 +7,7 @@ formulario.addEventListener("submit", async function(evento) {
     const password = document.getElementById("contraseña").value
 
     try {
-        const respuesta = await fetch("http://127.0.0.1:8000/registro", {
+        const respuesta = await fetch("https://olimpiadas-2026-9m46.onrender.com/registro", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
