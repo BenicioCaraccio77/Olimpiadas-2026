@@ -14,7 +14,7 @@ async function cargarCarrito() {
     try {
 
         const respuesta = await fetch(
-            "http://127.0.0.1:8000/productos"
+            "https://olimpiadas-2026-9m46.onrender.com/productos"
         )
 
         const productos = await respuesta.json()

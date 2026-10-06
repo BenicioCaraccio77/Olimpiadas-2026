@@ -7,7 +7,7 @@ formulario.addEventListener("submit", async (e) => {
     const password = document.getElementById("contraseña").value
 
     try {
-        const respuesta = await fetch("http://127.0.0.1:8000/login", {
+        const respuesta = await fetch("https://olimpiadas-2026-9m46.onrender.com/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -28,7 +28,7 @@ formulario.addEventListener("submit", async (e) => {
             )
 
             const respuestaAdmin = await fetch(
-                "http://127.0.0.1:8000/admin/verificar",
+                "https://olimpiadas-2026-9m46.onrender.com/admin/verificar",
                 {
                     headers: {
                         "Authorization": `Bearer ${datos.access_token}`

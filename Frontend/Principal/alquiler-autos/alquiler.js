@@ -1,6 +1,6 @@
 async function cargarAutos() {
     try {
-        const respuesta = await fetch("http://127.0.0.1:8000/productos/autos")
+        const respuesta = await fetch("https://olimpiadas-2026-9m46.onrender.com/productos/autos")
         const autos = await respuesta.json()
 
         const contenedor = document.querySelector(".TARJETAS")

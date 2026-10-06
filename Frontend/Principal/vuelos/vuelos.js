@@ -1,6 +1,6 @@
 async function cargarVuelos() {
     try {
-        const respuesta = await fetch("http://127.0.0.1:8000/productos/vuelos")
+        const respuesta = await fetch("https://olimpiadas-2026-9m46.onrender.com/productos/vuelos")
         const vuelos = await respuesta.json()
 
         const tarjetas = document.querySelector(".TARJETAS")

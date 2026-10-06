@@ -1,6 +1,6 @@
 async function cargarPaquetes() {
     try {
-        const respuesta = await fetch("http://127.0.0.1:8000/productos/paquetes")
+        const respuesta = await fetch("https://olimpiadas-2026-9m46.onrender.com/productos/paquetes")
         const paquetes = await respuesta.json()
 
         const contenedor = document.querySelector(".PAQUETES")
