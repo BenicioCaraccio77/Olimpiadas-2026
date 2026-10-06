@@ -1,3 +1,4 @@
+
 async function cargarCompras() {
 
     const token =
@@ -15,7 +16,7 @@ async function cargarCompras() {
     try {
 
         const respuesta = await fetch(
-            "http://127.0.0.1:8000/admin/compras",
+            "https://olimpiadas-2026-9m46.onrender.com/admin/compras",
             {
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -130,7 +131,7 @@ async function verCompra(compraId) {
     try {
 
         const respuesta = await fetch(
-            `http://127.0.0.1:8000/admin/compras/${compraId}`,
+            `https://olimpiadas-2026-9m46.onrender.com/admin/compras/${compraId}`,
             {
                 headers: {
                     "Authorization": `Bearer ${token}`
@@ -216,7 +217,7 @@ async function editarCompra(compraId, estadoActual) {
     try {
 
         const respuesta = await fetch(
-            `http://127.0.0.1:8000/admin/compras/${compraId}?estado=${encodeURIComponent(nuevoEstado)}`,
+            `https://olimpiadas-2026-9m46.onrender.com/admin/compras/${compraId}?estado=${encodeURIComponent(nuevoEstado)}`,
             {
                 method: "PUT",
                 headers: {
@@ -268,7 +269,7 @@ async function cancelarCompra(compraId) {
     try {
 
         const respuesta = await fetch(
-            `http://127.0.0.1:8000/admin/compras/${compraId}?estado=cancelada`,
+            `https://olimpiadas-2026-9m46.onrender.com/admin/compras/${compraId}?estado=cancelada`,
             {
                 method: "PUT",
                 headers: {

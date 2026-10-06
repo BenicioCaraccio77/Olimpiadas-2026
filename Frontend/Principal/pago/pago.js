@@ -1,3 +1,4 @@
+
 async function cargarResumen() {
 
     const carrito =
@@ -15,7 +16,7 @@ async function cargarResumen() {
     try {
 
         const respuesta = await fetch(
-            "http://127.0.0.1:8000/productos"
+            "https://olimpiadas-2026-9m46.onrender.com/productos"
         )
 
         const productos = await respuesta.json()
@@ -97,7 +98,7 @@ document.getElementById("confirmar").addEventListener("click", async () => {
     try {
 
         const respuestaProductos = await fetch(
-            "http://127.0.0.1:8000/productos"
+            "https://olimpiadas-2026-9m46.onrender.com/productos"
         )
 
         const productos =
@@ -138,9 +139,15 @@ document.getElementById("confirmar").addEventListener("click", async () => {
                 }
             })
 
+        console.log("¿Token existe?:", !!token)
+        console.log("Longitud token:", token ? token.length : 0)
+        console.log(
+            "Inicio token:",
+            token ? token.substring(0, 10) : "NO HAY TOKEN"
+        )
 
         const respuesta = await fetch(
-            `http://127.0.0.1:8000/compras?total=${total}&metodo_pago=${encodeURIComponent(metodo.value)}`,
+            `https://olimpiadas-2026-9m46.onrender.com/compras?total=${total}&metodo_pago=${encodeURIComponent(metodo.value)}`,
             {
                 method: "POST",
 
@@ -153,10 +160,8 @@ document.getElementById("confirmar").addEventListener("click", async () => {
             }
         )
 
-
         const datos =
             await respuesta.json()
-
 
         if (!respuesta.ok || datos.error) {
 
@@ -168,15 +173,12 @@ document.getElementById("confirmar").addEventListener("click", async () => {
             return
         }
 
-
         sessionStorage.removeItem("carrito")
 
         alert("Pago confirmado correctamente")
 
-
         window.location.href =
             "../principal.html"
-
 
     } catch (error) {
 
@@ -191,3 +193,4 @@ document.getElementById("confirmar").addEventListener("click", async () => {
 
 
 cargarResumen()
+

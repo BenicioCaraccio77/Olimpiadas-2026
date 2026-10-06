@@ -6,6 +6,17 @@ from database import supabase, supabase_admin
 
 app = FastAPI()
 
+from fastapi import FastAPI, Header
+from pydantic import BaseModel
+from database import supabase, supabase_admin
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+print("URL:", supabase.supabase_url)
+print("KEY cargada:", bool(supabase.supabase_key))
+print("KEY ES SERVICE ROLE:", supabase.supabase_key.startswith("eyJ"))
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -13,6 +24,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
+
 
 class Usuario(BaseModel):
     email: str
